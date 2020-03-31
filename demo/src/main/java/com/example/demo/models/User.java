@@ -2,6 +2,7 @@ package com.example.demo.models;
 
 
 import javax.persistence.Entity;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -19,15 +20,15 @@ public class User {
   
   public String getLastName() {
 	return lastName;
+	
+	
 }
 
 public void setLastName(String lastName) {
 	this.lastName = lastName;
 }
 
-private boolean smoker;
-  
-  
+
 
   public Integer getId() {
     return id;
@@ -54,17 +55,5 @@ private boolean smoker;
     this.email = email;
   }
 
-/**
- * @return the smoker
- */
-public boolean isSmoker() {
-	return smoker;
-}
 
-/**
- * @param smoker the smoker to set
- */
-public void setSmoker(boolean smoker) {
-	this.smoker = smoker;
-}
 }
